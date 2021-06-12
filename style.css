@@ -1,0 +1,16 @@
+html{
+	height: 100%;
+	width: 1000px;
+	background-color: hsla(200, 40%, 30%, 0.4);
+	background-image: url('a.png'),url('b.png'),url('c.png'),url('d.png'),url('e.png');
+	background-repeat: repeat-x;
+	background-position: 0 0%,0 100%,0 50%,0 80%,0 0;
+	background-size: 2500px,800px,500px 200px,1000px,400px 260px;
+	animation: 50s parallax infinite linear;
+}
+
+@keyframes parallax {
+	100%{
+		background-position: -5000px 20%,-800px 95%,500px 50%,1000px 100%,400px 0;
+	}
+}
